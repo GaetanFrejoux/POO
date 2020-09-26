@@ -117,5 +117,20 @@ public class Main{
 //    	
 //    	System.out.println(wset.toString());
 //    	
+//    	List<Location> L = new ArrayList<>();
+//    	L.addAll(new Location(10,10).allPos(10, 10));
+//    	System.out.println(L.toString());
+//    	
+//    	List<Robot> r = new ArrayList<>();
+//    	r.add(new Robot("tommy"));
+//    	List<Location> l = new ArrayList<>();
+//    	l.add(new Location(0,5));
+//    	World w = new World();
+//    	w.addRobot("Tommy");
+//    	w.display();
+//    	System.out.println(w.getFreeLocations());
+//    	
+// 
+    	
     }
 }

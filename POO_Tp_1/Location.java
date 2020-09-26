@@ -1,4 +1,4 @@
-import java.util.List;
+import java.util.*;
 
 public class Location {
 	
@@ -12,14 +12,18 @@ public class Location {
 		this.Y = y;
 	}
 	
-	public static List<Location> allPos(int x, int y){
-		List<Location> res = null;
-		for(int i = 0; i < x ; i++) {
-			for(int j = 0 ; j < y ; j++ ) {
+	public static List<Location> allPos(int size){
+		List<Location> res = new ArrayList<>();
+		for(int i = 0; i < size ; i++) {
+			for(int j = 0 ; j < size ; j++ ) {
 				res.add(new Location(i,j));
 			}
 		}
 		return res;
 		
 	}
+	public String toString() {
+		return "(" + this.X + "," + this.Y + ")";
+	}
+	
 }
